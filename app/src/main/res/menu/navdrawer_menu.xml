@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/rulesFragment"
+        android:icon="@drawable/rules"
+        android:title="@string/rules" />
+    <item
+        android:id="@+id/aboutFragment"
+        android:title="@string/about" />
+    <item
+        android:id="@+id/gameFragment"
+        android:contentDescription="@string/singleawnserquiz"
+        android:title="@string/androidquiz" />
+    <item
+        android:id="@+id/gamefragment2"
+        android:contentDescription="@string/multiplechoicequiz"
+        android:title="@string/quiz_starwars" />
+
+</menu>

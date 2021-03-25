@@ -17,7 +17,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.navigation.GameOverFragment">
+    tools:context="com.example.android.navigation.gameresult.GameOverFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/gameOverConstraintLayout"
@@ -56,7 +56,41 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/gameOverFragment" />
+
+        <Button
+            android:id="@+id/seeAwnsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/vertical_margin"
+            android:layout_marginTop="@dimen/vertical_margin"
+            android:layout_marginEnd="@dimen/vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="@dimen/button_padding"
+            android:paddingEnd="@dimen/button_padding"
+            android:text="@string/see_the_awnsers"
+            android:textColor="?colorAccent"
+            android:textSize="@dimen/button_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.82"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gameOverFragment"
+            app:layout_constraintVertical_bias="0.052" />
+
+        <ListView
+            android:id="@+id/ListAnwers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#F4EFEF"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/gameOverFragment"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
